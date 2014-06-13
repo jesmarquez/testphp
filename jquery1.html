@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>each demo</title>
+  <style>
+  div {
+    color: red;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 300px;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+ 
+<div>Click here</div>
+<div>to iterate through</div>
+<div>these divs.</div>
+ 
+<script>
+$( document.body ).click(function() {
+  $( "div" ).each(function( i ) {
+    if ( this.style.color !== "blue" ) {
+      this.style.color = "blue";
+    } else {
+      this.style.color = "";
+    }
+  });
+  
+  $( "li" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+  
+});
+</script>
+ 
+ <ul>
+  <li>foo</li>
+  <li>bar</li>
+</ul>
+<img src="http://181.118.150.48/newsletter/image/cage.jpg"> 
+ 
+</body>
+</html>

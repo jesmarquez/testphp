@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>each demo</title>
+  <style>
+  
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+ <ul class="first">
+  <li class="foo">list item 1</li>
+  <li>list item 2</li>
+  <li class="bar">list item 3</li>
+</ul>
+<ul class="second">
+  <li class="foo">list item 1</li>
+  <li>list item 2</li>
+  <li class="bar">list item 3</li>
+</ul>
+
+					<select id="speriodo" style="width: 90px; height: 25px; float: right;">
+						<option value ="0">Seleccione...</option>
+						<option value ="1">Seleccione...1</option>
+						<option value ="2">Seleccione...3</option>
+						
+					</select>
+
+<script>
+$( "ul.first" )
+  .find( ".foo" )
+    .css( "background-color", "red" )
+  .end()
+  .find( ".bar" )
+    .css( "background-color", "green" );
+
+			$( "#speriodo" ).change(function() {
+				
+				var ruta = $("#filtrarProceso").attr("href");
+				window.location.href = "http://localhost:8080/pruebas/converfecha.php";
+				/*$.get("http://localhost:8080/pruebas/converfecha.php");
+				alert("ruta");*/
+			});		
+			
+	
+	
+</script>
+ 
+</body>
+</html>
