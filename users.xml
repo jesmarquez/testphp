@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<users><item0><username>testusername1</username><password>testpassword1</password><firstname>testfirstname1</firstname><lastname>testlastname1</lastname><email>testemail1@moodle.com</email><city>testcity1</city><country>co</country></item0><item1><username>testusername2</username><password>testpassword2</password><firstname>testfirstname2</firstname><lastname>testlastname2</lastname><email>testemail2@moodle.com</email><city>testcity2</city><country>co</country></item1></users>

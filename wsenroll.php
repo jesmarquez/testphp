@@ -1,0 +1,5 @@
+<?php
+	$filetoken = "wsmoodle.tkn";
+	
+	
+?>

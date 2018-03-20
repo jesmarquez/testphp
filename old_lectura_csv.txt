@@ -1,0 +1,19 @@
+					//procesamos la matriz separando los campos por medio del separador putno y coma
+				while($i < $numero_fila){
+					$row = $filas[$i];
+					$sql = explode(";",$row);
+
+					$e = $repository->findOneBy(array('ci' => $sql[5]));
+					//Si esta en la base de datos lo ignoramos				
+					if ($e != NULL){
+						$numero_registrados++;
+						$i++;						
+						continue;
+					}
+
+					$listaEstudiantes[$i] =  array("codigo"=> $sql[1], "apellidos"=>$sql[2], "nombres"=>$sql[3], "ci" => $sql[5], 	
+											"emailInstitucional" => $sql[7], "emailpersonal" => $sql[8]);
+					$i++;
+					$nohay = false;
+				}
+	
