@@ -1,7 +1,8 @@
 <?php
 	
 	$i=0;
-	if (!$i){
+	
+	if (!$i) {
 	$instances = array();
 	
 	$instance1 = array("1"=>"jesus");
@@ -71,7 +72,7 @@
 	echo "Unión de \$a y \$b: \n";
 	var_dump($c);
 	
-	}
+	
 	
 	
 	echo 'roles->';
@@ -112,4 +113,10 @@
 	  "firstname" => 'testfirstname');
 	  
 	var_dump($user);
+	}
+	
+	echo '<p>hola</p>';
+	$gar = array();
+	
+	$gar = array(""
 ?>

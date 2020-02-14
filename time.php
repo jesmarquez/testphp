@@ -18,4 +18,10 @@ echo date('d/m/Y', $time_u), "<br>";
 
 echo strval($time_u);
 
+$fecha_solicitud = time();
+print_r("\ntime->%d",$fecha_solicitud."\n");
+
+$fecha_solicitud_str = date("Y-m-d H:i:s", $fecha_solicitud);
+printf($fecha_solicitud_str."\n");
+
 ?>
