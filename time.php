@@ -1,4 +1,5 @@
 <?php
+/*
 $semanaSiguiente = time() + (7 * 24 * 60 * 60);
                    // 7 días; 24 horas; 60 minutos; 60 segundos
 echo 'Ahora:            '. date('Y-m-d') ."<br>";
@@ -23,5 +24,17 @@ print_r("\ntime->%d",$fecha_solicitud."\n");
 
 $fecha_solicitud_str = date("Y-m-d H:i:s", $fecha_solicitud);
 printf($fecha_solicitud_str."\n");
+*/
 
+/*
+$day = Date(1);
+
+printf($day, "\n");
+*/
+
+
+$origin = new DateTime('2009-10-11');
+$target = new DateTime('2009-10-13');
+$interval = $origin->diff($target);
+echo $interval->format('%R%a days');
 ?>
